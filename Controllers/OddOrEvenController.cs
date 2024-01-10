@@ -10,12 +10,11 @@ public class OddOrEvenController : Controller
     public OddOrEvenController(IOddOrEvenService oddOrEvenService){
         _oddOrEvenService = oddOrEvenService;
     }
-    public List<int> Num = new();
     private readonly IOddOrEvenService _oddOrEvenService;
 
-    [HttpPost]
-    [Route("Number")]
-    public string ChoseNum(int Number){
+    [HttpGet]
+    [Route("Number/{Number}")]
+    public string ChoseNum(string Number){
         return _oddOrEvenService.ChoseNum(Number);
     }
 }

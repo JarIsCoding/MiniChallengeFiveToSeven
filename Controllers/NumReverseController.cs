@@ -12,9 +12,9 @@ public class NumReverseController
         _numReverseService = numReverseService;
     }
 
-    [HttpPost]
-    [Route("Input Here")]
-    public string NumReverse(int Numbers)
+    [HttpGet]
+    [Route("InputHere/{Numbers}")]
+    public string NumReverse(string Numbers)
     {
         return _numReverseService.NumReverse(Numbers);
     }

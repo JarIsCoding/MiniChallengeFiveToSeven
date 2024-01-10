@@ -1,15 +1,23 @@
 namespace MiniChallengeFiveToSeven.Services.NumReverse;
 public class NumReverseService : INumReverseService
 {
-    public string NumReverse(int Numbers)
+    public string NumReverse(string Numbers)
     {
-        string spaghetti = Numbers.ToString();
-        string result = "";
-
-        for (int i = spaghetti.Length - 1; i >= 0; i--)
+        if (int.TryParse(Numbers, out int parsedNumber))
         {
-            result += spaghetti[i];
+            string result = "";
+
+            for (int i = Numbers.Length - 1; i >= 0; i--)
+            {
+                result += Numbers[i];
+            }
+
+            return $"Your numbers were {parsedNumber} and here they are reversed! {result}";
         }
-        return $"Your numbers were {Numbers} and here they are reversed! {result}";
+        else
+        {
+            return "Please enter only numbers";
+        }
     }
+
 }

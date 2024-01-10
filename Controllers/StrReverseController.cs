@@ -13,8 +13,8 @@ public class StrReverseController
     public List<string> reverse = new();
     private readonly IStrReverseService _strReverseService;
 
-    [HttpPost]
-    [Route("Input Here")]
+    [HttpGet]
+    [Route("InputHere/{revstring}")]
     public string Reversed(string revstring)
     {
         return _strReverseService.Reversed(revstring);

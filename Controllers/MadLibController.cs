@@ -8,14 +8,12 @@ namespace MiniChallengeFiveToSeven.Controllers;
 public class MadLibController : Controller
 {
     private readonly IMadLibService _madLibService;
-    public List<string> words = new();
-
     public MadLibController(IMadLibService madLibService){
         _madLibService = madLibService;
     }
 
-    [HttpPost]
-    [Route("Madlib")]
+    [HttpGet]
+    [Route("Madlib/{Object}/{Verb}/{Adj}/{Place}/{Person}")]
     public string MadLib(string Object, string Verb, string Adj, string Place, string Person)
     {
         return _madLibService.MadLib(Object, Verb, Adj, Place, Person);

@@ -1,15 +1,23 @@
 namespace MiniChallengeFiveToSeven.Services.OddOrEven;
 public class OddOrEvenService : IOddOrEvenService
 {
-    public string ChoseNum(int Number)
+    public string ChoseNum(string Number)
     {
-        if (Number % 2 == 0)
+        if (int.TryParse(Number, out int parsedNumber))
         {
-            return $"You chose {Number}, and thats even!";
+            if (parsedNumber % 2 == 0)
+            {
+                return $"You chose {parsedNumber}, and that's even!";
+            }
+            else
+            {
+                return $"You chose {parsedNumber}, and that's odd!";
+            }
         }
         else
         {
-            return $"You chose {Number}, and thats Odd!";
+            return "Please only input numbers.";
         }
     }
+
 }
