@@ -469,19 +469,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sai4s\\.nuget\\packages\\": {}
+    "C:\\Users\\EYHST\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sai4s\\Documents\\CSA 2023-24\\Level 2\\Week 1\\MiniChallengeFiveToSeven\\MiniChallengeFiveToSeven.csproj",
+      "projectUniqueName": "C:\\Users\\EYHST\\Desktop\\CodeStack\\Level 2\\Peer Review\\jared_MC_5_to_7\\MiniChallengeFiveToSeven\\MiniChallengeFiveToSeven.csproj",
       "projectName": "MiniChallengeFiveToSeven",
-      "projectPath": "C:\\Users\\sai4s\\Documents\\CSA 2023-24\\Level 2\\Week 1\\MiniChallengeFiveToSeven\\MiniChallengeFiveToSeven.csproj",
-      "packagesPath": "C:\\Users\\sai4s\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sai4s\\Documents\\CSA 2023-24\\Level 2\\Week 1\\MiniChallengeFiveToSeven\\obj\\",
+      "projectPath": "C:\\Users\\EYHST\\Desktop\\CodeStack\\Level 2\\Peer Review\\jared_MC_5_to_7\\MiniChallengeFiveToSeven\\MiniChallengeFiveToSeven.csproj",
+      "packagesPath": "C:\\Users\\EYHST\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EYHST\\Desktop\\CodeStack\\Level 2\\Peer Review\\jared_MC_5_to_7\\MiniChallengeFiveToSeven\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sai4s\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\EYHST\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
